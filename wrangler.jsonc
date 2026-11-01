@@ -1,0 +1,20 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "psa-grading-tracker",
+  "compatibility_date": "2025-09-02",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "main": "@tanstack/react-start/server-entry",
+  "observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "psa-grading-tracker-db",
+      "database_id": "d815482d-2c4a-495a-8ce5-ec08f737cfb5",
+      "migrations_dir": "migrations"
+    }
+  ]
+}
